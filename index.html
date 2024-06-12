@@ -1,45 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sabor da Terra</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Sabor Da Terra</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <header>
-        <div>
-            <input type="text" placeholder="busca por nome ou código">
-            <img src="image 2.jpg" alt="foto de lupa">
+        <div class="logo-search">
+            <img src="logo.png" alt="Indústria Gaúcha Logo" class="logo">
+            <input type="text" placeholder="Busque por nome ou código" class="search-bar">
+            <button class="search-button"><img src="search-icon.png" alt="Search"></button>
         </div>
-        <img src="#" alt="login">
-        <button>
-            <a href="quemsomos.html">Quem somos</a>
-        </button>
+        <button class="login-button">Login</button>
     </header>
-    <section>
-        <img src="image 1.png" alt="foto da logo">
-        <h1>Sabor da Terra</h1>
-    </section>
-    <section>
-        <h3>Mais Vendidos</h3>
-        <div>
-            <div>
-<img src="image 4.png" alt="foto de um pacote de castanha">
-            </div>
-            <div>
-<img src="image 6.png" alt="foto de um pote de molho de tomate">
-            </div>
-            <div>
-                <img src="image 7.png" alt="foto de um azeite">
-            </div>
-            <div>
-                <img src="image 8.png" alt="foto de um pacote de frutas cristalizadas">
-            </div>
-        </div>
-    </section>
-</body>
 
+    <main>
+        <section class="hero">
+            <h1>Sabor Da Terra</h1>
+        </section>
+
+        <section class="mais-vendidos">
+            <h2>Mais Vendidos</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="castanha.png" alt="Castanha de Caju Torrada">
+                    <p>Brasil Frutt Castanha de Caju Torrada sem Sal pacote 200g</p>
+                    <p>R$30,99</p>
+                    <button>COMPRAR</button>
+                </div>
+                <div class="product">
+                    <img src="molho-tomate.png" alt="Molho de Tomate">
+                    <p>Molho de Tomate com Pimenta Orgânico Mariani 345 g</p>
+                    <p>R$21,00</p>
+                    <button>COMPRAR</button>
+                </div>
+                <div class="product">
+                    <img src="azeite.png" alt="Azeite Extravirgem">
+                    <p>Azeite Extravirgem Orgânico 250ml Native</p>
+                    <p>R$41,50</p>
+                    <button>COMPRAR</button>
+                </div>
+                <div class="product">
+                    <img src="frutas-cristalizadas.png" alt="Frutas Cristalizadas">
+                    <p>Frutas Cristalizadas 100g Feliz</p>
+                    <p>R$5,99</p>
+                    <button>COMPRAR</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="recipes">
+            <div class="recipe">
+                <img src="tapioca.png" alt="Tapioca de Cacau">
+                <p>tapioca de cacau</p>
+            </div>
+            <div class="recipe">
+                <img src="brigadeiro.png" alt="Brigadeiro Vegano">
+                <p>brigadeiro vegano</p>
+            </div>
+            <div class="recipe">
+                <img src="nhoque.png" alt="Nhoque de Inhame">
+                <p>nhoque de inhame, cúrcuma e cenoura</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Anna Vitoria Nazario Alves<br>Julia Magni Gonçalves do Espirito Santo</p>
+        <p>telefone para contato: (xx) xxxx-xxxx</p>
+        <div class="social-media">
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
