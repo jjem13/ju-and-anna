@@ -19,6 +19,11 @@ header {
     align-items: center;
 }
 
+button a{
+    color: #333;
+    text-decoration: none;
+}
+
 .logo {
     height: 50px;
 }
