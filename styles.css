@@ -106,8 +106,8 @@ button a{
     background-color: #e57373;
     display: flex;
     justify-content: center;
-    gap: 50px;
-    padding: 50px;
+    gap: 20px;
+    padding: 20px;
 }
 
 .recipe {
