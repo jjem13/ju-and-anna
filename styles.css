@@ -66,9 +66,7 @@ button a{
 }
 
 .products {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+    text-align: center;
 }
 
 .product {
@@ -144,3 +142,11 @@ footer p {
     height: 30px;
 }
     
+@media screen and (min-width: 1024px){
+    .products {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+}
