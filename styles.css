@@ -12,6 +12,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    flex-wrap: wrap;
 }
 
 .logo-search {
@@ -178,5 +179,8 @@ footer p {
         justify-content: center;
         gap: 20px;
         padding: 20px;
+    }
+    header{
+        flex-wrap: nowrap;
     }
 }
