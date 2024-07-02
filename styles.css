@@ -1,3 +1,4 @@
+/* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,6 +7,7 @@ body {
     background-color: #f0f4c3;
 }
 
+/* Estilos para cabeçalho */
 header {
     background-color: #a5d6a7;
     display: flex;
@@ -19,11 +21,6 @@ header {
     align-items: center;
 }
 
-button a{
-    color: #333;
-    text-decoration: none;
-}
-
 .logo {
     height: 50px;
 }
@@ -33,6 +30,7 @@ button a{
     border: none;
     border-radius: 5px;
     margin-left: 10px;
+    flex: 1;
 }
 
 .search-button {
@@ -50,12 +48,23 @@ button a{
     cursor: pointer;
 }
 
+.quem-somos {
+    margin-left: 10px;
+}
+
+.quem-somos a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Estilos para a seção de destaque (hero) */
 .hero {
     background-color: #dcedc8;
     text-align: center;
     padding: 20px;
 }
 
+/* Estilos para a seção de mais vendidos */
 .mais-vendidos {
     text-align: center;
     padding: 20px;
@@ -66,7 +75,9 @@ button a{
 }
 
 .products {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .product {
@@ -76,14 +87,16 @@ button a{
     padding: 10px;
     width: 200px;
     text-align: center;
+    margin: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
 }
 
 .product img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
+    width: 100%;
+    height: auto;
+    max-width: 150px; /* Tamanho máximo da imagem */
+    border-radius: 5px;
 }
 
 .product p {
@@ -102,9 +115,11 @@ button a{
     transform: scale(1.05);
 }
 
+/* Estilos para a seção de receitas */
 .recipes {
     background-color: #e57373;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     padding: 20px;
@@ -113,15 +128,18 @@ button a{
 .recipe {
     text-align: center;
     color: #fff;
+    width: 100%;
+    margin: 10px;
 }
 
 .recipe img {
-    width: 200px;
-    height: 150px;
+    width: 100%;
+    height: auto;
+    max-width: 200px; /* Tamanho máximo da imagem */
     border-radius: 10px;
-    object-fit: cover;
 }
 
+/* Estilos para o rodapé */
 footer {
     background-color: #a5d6a7;
     text-align: center;
@@ -133,6 +151,12 @@ footer p {
     color: #333;
 }
 
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
 .social-media a {
     margin: 0 10px;
 }
@@ -141,6 +165,8 @@ footer p {
     width: 30px;
     height: 30px;
 }
+
+
     
 @media screen and (min-width: 1024px){
     .products {
